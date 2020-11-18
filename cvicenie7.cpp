@@ -30,7 +30,7 @@ private:
     int Length;
 public:
     myVector() { Length = 0; data = nullptr; };
-    myVector(int n, int def_value);
+    myVector(int n, T def_value);
     ~myVector() { delete[] data; };
     void Print();
 
@@ -44,7 +44,7 @@ public:
 };
 
 template<class T>
-myVector<T>::myVector(int n, int def_value)
+myVector<T>::myVector(int n, T def_value)
 {
     int i;
     Length = n;
